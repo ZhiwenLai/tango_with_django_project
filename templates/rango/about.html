@@ -1,3 +1,7 @@
+<!-- if request.session.test_cookie_worked():
+print("TEST COOKIE WORKED!")
+request.session.delete_test_cookie() -->
+
 {% extends 'rango/base.html' %}
 {% load staticfiles %}
 
@@ -18,6 +22,7 @@
         <div>
             Rango says here is the about page. <br />
             This tutorial has been put together by Zhiwen Lai.<br />
+            <p>Visits: {{ visits }}</p>
         </div>
         <!-- <div>
             <a href="/rango/">Index</a><br /> -->
